@@ -19,7 +19,7 @@ import { getTranslateLanguageFromConfig, detectBrowserLanguage } from "./utils/l
 // 自动检测浏览器语言（服务端渲染时默认为 'en'）
 const SITE_LANG = detectBrowserLanguage("en");
 // 如果需要强制使用特定语言，可以取消注释下面一行并设置语言代码
-// const SITE_LANG = "zh"; // 强制使用的语言代码，'zh', 'en', 'ja' 等
+const SITE_LANG = "zh"; // 强制使用的语言代码，'zh', 'en', 'ja' 等
 
 
 export const siteConfig: SiteConfig = {
@@ -225,14 +225,19 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
 	avatar: "assets/images/avatar.png", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
-	name: "Twilight",
+	name: "xszcFroakie",
 	bio: "Hi",
 	links: [
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/Spr-Aachen/Twilight",
+			url: "https://github.com/xszcFroakie",
 		},
+		{
+			name: "Bilibili",
+			icon: "fa6-brands:bilibili",
+			url: "https://space.bilibili.com/687032519",
+		}
 	],
 };
 
@@ -447,7 +452,7 @@ export const particleConfig: ParticleConfig = {
 
 // 看板娘配置
 export const pioConfig: import("./types/config").PioConfig = {
-	enable: false, // 启用看板娘
+	enable: true, // 启用看板娘
 	models: ["/pio/models/pio/model.json"], // 默认模型路径
 	position: "left", // 默认位置在右侧
 	width: 280, // 默认宽度
